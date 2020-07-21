@@ -1,11 +1,19 @@
 #!/bin/bash
 
+if  
+	[   {$UID}   -ne   0   ]
+then 
+	echo "you need root access"
+fi	
 
 
 
+lscpu
 
-lscpucat /etc/*release
+cat /etc/*release
+
 nproc
+
 lsblk
 
 
